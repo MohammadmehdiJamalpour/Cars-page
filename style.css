@@ -1,0 +1,123 @@
+* {padding: 0;
+margin:0;}
+ 
+
+
+main {               
+    display: flex; 
+    justify-content: center;
+    align-items: center;     
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;            
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;    
+
+}
+.sedans {    
+    background-color: #E28625;
+    width: 307px;
+    height: 500px;
+    border-top-left-radius:8px ;  
+    border-bottom-left-radius:8px ;
+}
+.suvs {
+    background-color: #006971;
+    width: 307px;
+    height: 500px ;      
+}
+.luxury {
+    background-color: #004140;
+    width: 307px;
+    height: 500px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;   
+}
+section h2 {
+    font-family: 'Big Shoulders Display' ;
+    font-weight: 700;
+    font-size: 40px;
+    color: #F2F2F2;
+    width: 101px;
+    height: 48px;   
+    margin-left: 48px;         
+}
+section img {
+    margin-top: 48px;
+    margin-left: 48px;
+    margin-bottom: 35px;
+}
+section p {
+    font-family: 'Lexend Deca' ;
+    width: 212px;
+    height: 125px;
+    margin-left: 47.5px;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+section button {
+    width: 146px;
+    height: 48px;
+    border-radius: 25px; 
+    border: none;
+    margin-left: 48px;
+    margin-top: 83px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+.sedans button {
+    color: #E28625;
+}
+.suvs button {
+    color:#006971;
+}
+.luxury button {
+    color:#004140;
+}
+.sedans button:hover {
+    color: #FFFFFF;
+    background-color:  #E28625 ;
+    cursor: pointer;
+    border: solid 2px #FFFFFF ;
+}
+.suvs button:hover {
+    color: #FFFFFF;
+    background-color:  #006971;
+    cursor: pointer;
+    border: solid 2px #FFFFFF ;
+}
+.luxury button:hover {
+    color: #FFFFFF;
+    background-color:  #004140 ;
+    cursor: pointer;
+    border: solid 2px #FFFFFF ;
+}
+@media (max-width:450px) {
+    main {
+        margin: 91px auto 85px auto ;  
+        width: auto ;
+        height: 1326px;
+        flex-direction: column;
+        
+    }
+    .sedans {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+    section button {
+        margin-bottom: 48px;
+        margin-top: 25px;
+    }
+}
+
